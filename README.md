@@ -24,13 +24,15 @@
 - [小程序/App（JS）](#小程序与App)
 - Web
 - 常用库
-  - Java
-  - Web
+  - [Java](./Java/JavaLib.md)
+  - [Web](./Web/WebLib.md)
 - 工具
 - 资料
 - ....
 
 ## 快速开发
+
+如有足够时间，个人感觉还是最好根据实际情况自己设计，下面所列举的可以作为设计的参考。
 
 [完整列表]()，其他参考：[码云后台管理框架列表](https://gitee.com/explore/backend?lang=Java)
 
@@ -39,6 +41,10 @@
 - [eladmin](https://github.com/elunez/eladmin) ![Packagist Stars](https://img.shields.io/github/stars/elunez/eladmin?style=flat-square)
 
   一个基于 Spring Boot 2.1.0 、 Spring Boot Jpa、 JWT、Spring Security、Redis、Vue的前后端分离的后台管理系统。
+
+- [FEBS-Shiro](https://github.com/febsteam/FEBS-Shiro) ![Packagist Stars](https://img.shields.io/github/stars/febsteam/FEBS-Shiro?style=flat-square)
+
+  FEBS-Shiro 是一款简单高效的后台权限管理系统，使用Spring Boot，Shiro和Layui构建。FEBS意指：**F**ast，**E**asy use，**B**eautiful和**S**afe。相信无论作为企业级应用，私活开发脚手架或者权限系统构建学习，FEBS-Shiro都会是一个不错的选择。
 
 - [Guns](https://github.com/stylefeng/Guns) ![Packagist Stars](https://img.shields.io/github/stars/stylefeng/Guns?style=flat-square)
 
@@ -201,6 +207,10 @@
 - [mpvue](https://github.com/Meituan-Dianping/mpvue) ![Packagist Stars](https://img.shields.io/github/stars/Meituan-Dianping/mpvue?style=flat-square)
 
   mpvue 是一个使用 Vue.js 开发小程序的前端框架，目前支持 微信小程序、百度智能小程序，头条小程序 和 支付宝小程序。
+
+- [taro](https://github.com/NervJS/taro) ![Packagist Stars](https://img.shields.io/github/stars/NervJS/taro?style=flat-square)
+
+  开放式跨端跨框架解决方案，支持使用 React/Vue/Nerv 等框架来开发微信/京东/百度/支付宝/字节跳动/ QQ 小程序/H5 等应用
 
 - [incubator-weex](https://github.com/apache/incubator-weex) ![Packagist Stars](https://img.shields.io/github/stars/apache/incubator-weex?style=flat-square)
 
