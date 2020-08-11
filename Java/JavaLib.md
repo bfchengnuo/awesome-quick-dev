@@ -72,3 +72,6 @@
 
   用于接口测试
 
+- [idworker](https://github.com/imadcn/idworker) ![Packagist Stars](https://img.shields.io/github/stars/imadcn/idworker?style=flat-square)
+
+  基于 zookeeper，snowflake 的分布式统一 ID 生成工具

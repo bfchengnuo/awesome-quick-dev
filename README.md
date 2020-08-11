@@ -57,6 +57,10 @@
 - [spring-boot-plus](https://github.com/geekidea/spring-boot-plus) ![Packagist Stars](https://img.shields.io/github/stars/geekidea/spring-boot-plus?style=flat-square)
 
   spring-boot-plus易于使用、快速、高效、功能丰富、开源的spring boot脚手架
+  
+- [lin-cms-spring-boot](https://github.com/TaleLin/lin-cms-spring-boot) ![Packagist Stars](https://img.shields.io/github/stars/TaleLin/lin-cms-spring-boot?style=flat-square)
+
+  Lin-CMS 是林间有风团队经过大量项目实践所提炼出的一套内容管理系统框架
 
 ### SpringCloud
 
@@ -71,6 +75,9 @@
 - [pig](https://gitee.com/log4j/pig) ![stars](https://gitee.com/log4j/pig/badge/star.svg?theme=dark)
 
   基于 Spring Cloud Hoxton 、Spring Boot 2.3、 OAuth2 的RBAC权限管理系统
+
+- [matecloud](https://github.com/matevip/matecloud) ![Packagist Stars](https://img.shields.io/github/stars/matevip/matecloud?style=flat-square)
+  基于 Spring Cloud Alibaba 的微服务架构。旨在为大家提供技术框架的基础能力的封装，减少开发工作，让您只关注业务。
 
 - open-capacity-platform
 
