@@ -217,7 +217,11 @@
 
 - [taro](https://github.com/NervJS/taro) ![Packagist Stars](https://img.shields.io/github/stars/NervJS/taro?style=flat-square)
 
-  开放式跨端跨框架解决方案，支持使用 React/Vue/Nerv 等框架来开发微信/京东/百度/支付宝/字节跳动/ QQ 小程序/H5 等应用
+  开放式跨端跨框架解决方案，支持使用 React/Vue/Nerv 等框架来开发微信/京东/百度/支付宝/字节跳动/ QQ 小程序/H5 等应用。
+
+- [uni-app](https://github.com/dcloudio/uni-app) ![Packagist Stars](https://img.shields.io/github/stars/dcloudio/uni-app?style=flat-square)
+
+  uni-app 是一个使用 Vue.js 开发小程序、H5、App的统一前端框架。由 DCloud 维护。
 
 - [incubator-weex](https://github.com/apache/incubator-weex) ![Packagist Stars](https://img.shields.io/github/stars/apache/incubator-weex?style=flat-square)
 

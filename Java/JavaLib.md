@@ -12,9 +12,9 @@
 
   Hutool是一个小而全的Java工具类库，通过静态方法封装，降低相关API的学习成本，提高工作效率，使Java拥有函数式语言般的优雅，让Java语言也可以“甜甜的”。
 
--  [soul](https://github.com/Dromara/soul)![Packagist Stars](https://img.shields.io/github/stars/Dromara/soul?style=flat-square)
+-   ![Packagist Stars](https://img.shields.io/github/stars/Dromara/soul?style=flat-square)
 
-  Reactive gateway based on webflux
+  Reactive gateway based on webflux；
 
   基于 Reactive 的网关
 
