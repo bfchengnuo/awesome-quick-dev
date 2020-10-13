@@ -46,6 +46,15 @@
 
   FEBS-Shiro 是一款简单高效的后台权限管理系统，使用Spring Boot，Shiro和Layui构建。FEBS意指：**F**ast，**E**asy use，**B**eautiful和**S**afe。相信无论作为企业级应用，私活开发脚手架或者权限系统构建学习，FEBS-Shiro都会是一个不错的选择。
 
+-  [renren-security](https://gitee.com/renrenio/renren-security) ![stars](https://gitee.com/renrenio/renren-security/badge/star.svg?theme=dark)
+
+  采用 SpringBoot、MyBatis、Shiro框架，开发的一套权限系统，极低门槛，拿来即用。设计之初，就非常注重安全性，为企业系统保驾护航，让一切都变得如此简单。
+  提供了单独的代码生成模块。
+
+-  [RuoYi-Vue](https://gitee.com/y_project/RuoYi-Vue) ![stars](https://gitee.com/y_project/RuoYi-Vue/badge/star.svg?theme=dark)
+
+  基于 SpringBoot，Spring Security，JWT，Vue & Element 的前后端分离权限管理系统
+
 - [Guns](https://github.com/stylefeng/Guns) ![Packagist Stars](https://img.shields.io/github/stars/stylefeng/Guns?style=flat-square)
 
   Guns基于Spring Boot2，致力于做更简洁的后台管理系统。包含系统管理，代码生成，多数据库适配，SSO单点登录，工作流，短信，邮件发送，OAuth2登录，任务调度，持续集成，docker部署等功。支持Spring Cloud Alibaba微服务。
