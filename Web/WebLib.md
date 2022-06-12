@@ -77,3 +77,15 @@
 - [vue-easytable](https://github.com/huangshuwei/vue-easytable) ![Packagist Stars](https://img.shields.io/github/stars/huangshuwei/vue-easytable?style=flat-square)
 
   Vue table 组件，支持各种复杂操作，例如单元格合并、编辑、多表头固定等。
+
+## 不活跃的存档
+
+- [iview](https://github.com/iview/iview) ![Packagist Stars](https://img.shields.io/github/stars/iview/iview?style=flat-square)
+
+  A high quality UI Toolkit built on Vue.js.
+
+  高质量的 Vue UI 库，旧版本：[ViewUI](https://github.com/view-design/ViewUI)
+
+- [iview-admin](https://github.com/iview/iview-admin) ![Packagist Stars](https://img.shields.io/github/stars/iview/iview-admin?style=flat-square)
+
+  基于 iview 的管理风格 UI。

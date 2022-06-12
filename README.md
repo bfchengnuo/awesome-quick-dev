@@ -7,7 +7,7 @@
 
 收集各类开源快速开发框架、常用库与小工具。
 
-为避免页面过长，主页主要收录高星、流行、实用的快速开发相关 repository，完整列表以及常用库等放到次级目录。
+为避免页面过长，主页主要收录高星、流行、实用的快速开发相关 repository，完整列表以及常用库等放到次级目录，选取时可根据最后更新时间来简单判断活跃程度。
 
 目前数据主要来自个人 Star 的项目，为方便自用整理。
 
@@ -38,7 +38,7 @@
 
 ### SpringBoot
 
-- [eladmin](https://github.com/elunez/eladmin) ![Packagist Stars](https://img.shields.io/github/stars/elunez/eladmin?style=flat-square)
+- [eladmin](https://github.com/elunez/eladmin) ![P](https://img.shields.io/badge/-推荐-44cef6?style=flat-square) ![Packagist Stars](https://img.shields.io/github/stars/elunez/eladmin?style=flat-square)
 
   一个基于 Spring Boot 2.1.0 、 Spring Boot Jpa、 JWT、Spring Security、Redis、Vue的前后端分离的后台管理系统。
 
@@ -81,7 +81,7 @@
 
   Jeecg-Boot 是一款基于BPM的低代码开发平台！采用前后端分离架构： SpringBoot 2.x，Ant Design&Vue，Mybatis-plus，Shiro，JWT。
 
-- [pig](https://gitee.com/log4j/pig) ![stars](https://gitee.com/log4j/pig/badge/star.svg?theme=dark)
+- [pig](https://gitee.com/log4j/pig) ![P](https://img.shields.io/badge/-推荐-44cef6?style=flat-square) ![stars](https://gitee.com/log4j/pig/badge/star.svg?theme=dark)
 
   基于 Spring Cloud Hoxton 、Spring Boot 2.3、 OAuth2 的RBAC权限管理系统
 
@@ -108,29 +108,25 @@
 
   JFinal 是基于 Java 语言的极速 WEB + ORM 框架，其核心设计目标是开发迅速、代码量少、学习简单、功能强大、轻量级、易扩展、Restful。
 
-## UI
+## WebUI
+
+划分为纯基本样式库与二次开发的管理后台通用库，对于前台一般是需要自主设计配合 UI 基本库实现开发；后台讲究效率基本功能一致，可使用模版快速实现功能。
+
+### 基础样式库
 
 - [element](https://github.com/ElemeFE/element) ![Packagist Stars](https://img.shields.io/github/stars/ElemeFE/element?style=flat-square)
 
   A Vue.js 2.0 UI Toolkit for Web.
 
-- [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin) ![Packagist Stars](https://img.shields.io/github/stars/PanJiaChen/vue-element-admin?style=flat-square)
-
-  vue-element-admin 是一个后台前端解决方案，它基于 vue 和 element-ui实现。
+  Vue 3.0 对应版本：[element-plus](https://github.com/element-plus/element-plus)
 
 - [ant-design](https://github.com/ant-design/ant-design) ![Packagist Stars](https://img.shields.io/github/stars/ant-design/ant-design?style=flat-square)
 
   An enterprise-class UI design language and React UI library.
 
-- [iview](https://github.com/iview/iview) ![Packagist Stars](https://img.shields.io/github/stars/iview/iview?style=flat-square)
+- [ant-design-vue](https://github.com/vueComponent/ant-design-vue)
 
-  A high quality UI Toolkit built on Vue.js.
-
-  高质量的 Vue UI 库，旧版本：[ViewUI](https://github.com/view-design/ViewUI)
-
-- [iview-admin](https://github.com/iview/iview-admin) ![Packagist Stars](https://img.shields.io/github/stars/iview/iview-admin?style=flat-square)
-
-  基于 iview 的管理风格 UI。
+  ant-design vue 移植版本，支持 Vue3
 
 - [layui](https://github.com/sentsin/layui) ![Packagist Stars](https://img.shields.io/github/stars/sentsin/layui?style=flat-square)
 
@@ -176,7 +172,18 @@
 
 - 完整列表
 
-## Web
+### Web管理后台通用
+
+- [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin) ![Packagist Stars](https://img.shields.io/github/stars/PanJiaChen/vue-element-admin?style=flat-square)
+
+  vue-element-admin 是一个后台前端解决方案，它基于 vue2 和 element-ui实现。
+
+- [vue-manage-system](https://github.com/lin-xin/vue-manage-system) ![Packagist Stars](https://img.shields.io/github/stars/lin-xin/vue-manage-system?style=flat-square)
+
+  基于 Vue3 + Element Plus 的后台管理系统解决方案
+
+
+## Web开发环境与工具
 
 - [parcel](https://github.com/parcel-bundler/parcel) ![Packagist Stars](https://img.shields.io/github/stars/parcel-bundler/parcel?style=flat-square)
 
@@ -184,7 +191,7 @@
 
   打包工具
 
-- [vite](https://github.com/vitejs/vite) ![Packagist Stars](https://img.shields.io/github/stars/vitejs/vite?style=flat-square)
+- [vite](https://github.com/vitejs/vite) ![P](https://img.shields.io/badge/-推荐-44cef6?style=flat-square) ![Packagist Stars](https://img.shields.io/github/stars/vitejs/vite?style=flat-square)
 
   Native-ESM powered web dev build tool. It's fast.
 
