@@ -5,255 +5,102 @@
 ![status](https://img.shields.io/badge/更新状态-怠惰-%2366ccff?style=flat-square)
 [![知识共享协议（CC协议）](https://img.shields.io/badge/License-Creative%20Commons-DC3D24.svg?style=flat-square)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 
-收集各类开源快速开发框架、常用库与小工具。
 
-为避免页面过长，主页主要收录高星、流行、实用的快速开发相关 repository，完整列表以及常用库等放到次级目录，选取时可根据最后更新时间来简单判断活跃程度。
 
-目前数据主要来自个人 Star 的项目，为方便自用整理。
+个人兴趣收集的可能用得上的东西；
 
-善用 Github 搜索 awesome 关键字。
 
-## 目录
 
-- [后台快速开发](#快速开发)
-  - [SpringBoot](#SpringBoot)
-  - [SpringCloud](#SpringCloud)
-  - [全家桶](#全家桶)
-  - [其他](#其他)
-- [UI 库](#UI)
-- [小程序/App（JS）](#小程序与App)
-- Web
-- 常用库
-  - [Java](./Java/JavaLib.md)
-  - [Web](./Web/WebLib.md)
-- 工具
-- 资料
-- ....
+一些零零碎碎的提示词收集参考：[Prompt.md](./Prompt.md)
 
-## 快速开发
+## 通用 / 编程 Agent
 
-如有足够时间，个人感觉还是最好根据实际情况自己设计，下面所列举的可以作为设计的参考。
+- [Codex / ChatGPT](https://github.com/openai/codex) — OpenAI 的终端编程 Agent，Rust 实现、Apache-2.0 开源，登录 ChatGPT 账号即可在命令行里读代码、改文件、跑命令和处理 Git 流程。
+- [Claude Code](https://github.com/anthropics/claude-code) — Anthropic 的终端编程 Agent，用自然语言理解整个代码库并完成改代码、解释复杂逻辑、走 Git 流程；仓库以文档和问题反馈为主，本体闭源。
+- [DSH](https://github.com/deepseek-ai/deepseek-harness) — DeepSeek Harness，官方开源的 Agent 运行框架（MIT），主张「一切皆插件」：模型适配器、工具、会话日志乃至 Agent 主循环都可替换，自带 Web UI，社区大量桌面客户端都基于它封装。
+- [Pi Desktop](https://github.com/vastsa/PI-Desktop) — Pi 编程 Agent 的本地优先桌面工作台（Electron + Rust 宿主），把项目、会话、子 Agent、预览拆成各自独立的空间，模型可自带；目前仍是 early preview。
+- [Alma](https://github.com/yetone/alma-releases) — 多供应商桌面 AI 客户端（官网 alma.now），一个界面里切换 OpenAI、Anthropic、Gemini、DeepSeek 等，带跨会话记忆、网页搜索、MCP 与插件；仓库只托管发布包。
+- [Cindy](https://github.com/makecindy/cindy) — Apache-2.0 的桌面 / 移动 Agent 客户端，把 Claude Code、Codex、Pi 当作底层引擎统一调度，中途换模型不断上下文，记忆与技能跨引擎共用，也能驱动本地浏览器和应用。
+- [Cherry Studio](https://github.com/CherryHQ/cherry-studio) — 多模型 AI 桌面工作台，统一接入各厂商 API 与本地模型，内置助手、知识库、MCP 与多助手并行对话。
+- [Reasonix](https://github.com/esengine/DeepSeek-Reasonix) — 面向 DeepSeek 的开源终端编程 Agent（MIT，单个 Go 二进制），围绕 prefix-cache 优化长会话成本，适合挂着跑数小时的重构任务，另有桌面端与 VS Code 扩展。
+- [WorkBuddy](https://www.workbuddy.cn) — 腾讯出品的 AI 工作台桌面应用（闭源），支持 Skills、MCP、自动化与多智能体协作，可读写本地文件、联网检索并直接产出文档、网页等成品。
+- [Qoder](https://qoder.com) — 阿里推出的 Agentic Coding 平台（闭源），覆盖 IDE、CLI、JetBrains 插件和移动端，主打把目标交给智能体自主完成开发任务。
 
-[完整列表]()，其他参考：[码云后台管理框架列表](https://gitee.com/explore/backend?lang=Java)
 
-### SpringBoot
 
-- [eladmin](https://github.com/elunez/eladmin) ![P](https://img.shields.io/badge/-推荐-44cef6?style=flat-square) ![Packagist Stars](https://img.shields.io/github/stars/elunez/eladmin?style=flat-square)
 
-  一个基于 Spring Boot 2.1.0 、 Spring Boot Jpa、 JWT、Spring Security、Redis、Vue的前后端分离的后台管理系统。
 
-- [FEBS-Shiro](https://github.com/febsteam/FEBS-Shiro) ![Packagist Stars](https://img.shields.io/github/stars/febsteam/FEBS-Shiro?style=flat-square)
+## 辅助工具
 
-  FEBS-Shiro 是一款简单高效的后台权限管理系统，使用Spring Boot，Shiro和Layui构建。FEBS意指：**F**ast，**E**asy use，**B**eautiful和**S**afe。相信无论作为企业级应用，私活开发脚手架或者权限系统构建学习，FEBS-Shiro都会是一个不错的选择。
+- [CloakBrowser](https://github.com/CloakHQ/CloakBrowser) — 从 Chromium 源码层面改指纹逻辑的隐身浏览器（MIT），可直接替换 Playwright，官方称通过 50+ 项机器人检测；反爬严格的站点可以拿它试。
+- [StackPrism](https://github.com/setube/stackprism) — 浏览器扩展（Chrome / Edge / Firefox），用静态扫描、响应头、动态资源、JS 版权注释四条通道并行识别网页技术栈，合并去重后按 50+ 类目展示，全程本地运行不上传；注意是 CC BY-NC-SA 协议，仅限非商用。
+- [Dokobot](https://dokobot.ai/zh-CN) — 让 Agent 通过你已登录的真实浏览器读页面，按像素级视觉提取而非 DOM，自动滚动续读并输出精简结构化文本（省 token）；本地模式免费无限制，远程连接和并发另收费。
+- [Browser Use](https://github.com/browser-use/browser-use) — 用 Python 让 LLM 直接驱动浏览器模拟人操作（底层仍是 Playwright，所以也带着 Playwright 与实际渲染的差异），适合把「查资料、点流程」这类事交给 Agent。
+- [ego](https://github.com/citrolabs/ego-lite) — 专为 Agent 定制的浏览器，把你已登录的浏览器状态共享给 Codex、Claude Code 这类 Agent 去自动化操作，互不打扰，零配置。
+- [智能体构建指南](https://jimmysong.io/zh/book/ai-handbook/) — Jimmy Song 写的在线手册，按「认知 → 能力 → 交付 → 治理」讲 LLM 生态、提示词工程、RAG、MCP、Agent 运行时和 AI 网关；部分章节仍是草稿，适合先看目录挑着读。
+- [agency-agents 中文版](https://github.com/jnMetaCode/agency-agents-zh) — 277 个即插即用的 AI 专家角色定义（含 64 个小红书 / 抖音 / 飞书等中国市场原创），覆盖工程、设计、营销、金融等 20 个部门，角色写不出来时可以抄结构；配 agency-orchestrator 还能让多个角色按 DAG 协作。
+- [Langflow](https://github.com/langflow-ai/langflow) — 可视化拖拽搭 Agent 与工作流的开源平台（MIT），带桌面端和 Web 端，适合先跑通流程再决定要不要写代码。
+- [Codex Pets](https://codex-pets.net) — 社区桌宠图库，收录大量可下载的 Codex 桌宠；Codex 桌面端的桌宠本身就是任务状态指示器，用动画区分执行中、等你输入、完成待看和卡住四种状态，配合 `hatch-pet` 技能还能用自己的照片生成专属宠物。
 
--  [renren-security](https://gitee.com/renrenio/renren-security) ![stars](https://gitee.com/renrenio/renren-security/badge/star.svg?theme=dark)
+## Skill
 
-  采用 SpringBoot、MyBatis、Shiro框架，开发的一套权限系统，极低门槛，拿来即用。设计之初，就非常注重安全性，为企业系统保驾护航，让一切都变得如此简单。
-  提供了单独的代码生成模块。
+当然，大概率实际是用不到，这些资源的出现也是因为当前的 AI 还不够聪明，随着大模型的发展，一些很有用的东西肯定会被训练到大模型中，也不再需要外挂来解决。
 
--  [RuoYi-Vue](https://gitee.com/y_project/RuoYi-Vue) ![stars](https://gitee.com/y_project/RuoYi-Vue/badge/star.svg?theme=dark)
 
-  基于 SpringBoot，Spring Security，JWT，Vue & Element 的前后端分离权限管理系统
 
-- [Guns](https://github.com/stylefeng/Guns) ![Packagist Stars](https://img.shields.io/github/stars/stylefeng/Guns?style=flat-square)
+SKill 是通用的，但是不同的工具配置目录不一致，如果同时使用多个工具，进行统一管理是很有必要的，CC Switch 之类工具已经可以实现类似的功能了，也有一些专门做 Skill 管理的可以看看：[skills-manager](https://github.com/xingkongliang/skills-manager)、SkillsGate。
 
-  Guns基于Spring Boot2，致力于做更简洁的后台管理系统。包含系统管理，代码生成，多数据库适配，SSO单点登录，工作流，短信，邮件发送，OAuth2登录，任务调度，持续集成，docker部署等功。支持Spring Cloud Alibaba微服务。
 
-- [xboot](https://github.com/Exrick/xboot) ![Packagist Stars](https://img.shields.io/github/stars/Exrick/xboot?style=flat-square)
 
-  基于 Spring Boot 2.x 的一站式前后端分离快速开发平台 XBoot，微信小程序 + Uniapp，前端：Vue+iView Admin，后端：Spring Boot 2.x/Spring Security/JWT/JPA+Mybatis-Plus/Redis/Elasticsearch/Activiti 分布式限流/同步锁/验证码/SnowFlake雪花算法ID生成，动态权限管理，数据权限，工作流，代码生成，定时任务，第三方社交账号、短信登录 单点登录 OAuth2开放平台。
+首先推荐 Anthropic 官方的 [Skills 仓库](https://github.com/anthropics/skills/tree/main/skills)，学习标准 Skill 结构、参考稳定实现、搭建通用工作流的不错选择；最有用的 Skill 大概是让 AI 总结你使用习惯和踩坑经验后总结成的私有 Skill。
 
-- [spring-boot-plus](https://github.com/geekidea/spring-boot-plus) ![Packagist Stars](https://img.shields.io/github/stars/geekidea/spring-boot-plus?style=flat-square)
 
-  spring-boot-plus易于使用、快速、高效、功能丰富、开源的spring boot脚手架
-  
-- [lin-cms-spring-boot](https://github.com/TaleLin/lin-cms-spring-boot) ![Packagist Stars](https://img.shields.io/github/stars/TaleLin/lin-cms-spring-boot?style=flat-square)
 
-  Lin-CMS 是林间有风团队经过大量项目实践所提炼出的一套内容管理系统框架
+- [Humanizer](https://github.com/blader/humanizer) — 去除 AI 写作痕迹的 Agent Skill，基于维基百科「Signs of AI writing」归纳的二十多种模式，把机器味的文字改写成更像人写的表达；支持提供自己的样文来模仿个人文风，也可只处理文件里的正文、不动代码和数据。
+- [南鸢写真提示词](https://github.com/nuyoah-ai-works/nuyoah-xiezhen-prompt) — 人像与写真摄影 Agent Skill，提供完整中文 Prompt、系列母版与同系列变体，并支持按原有摄影企划换一位人物重新拍摄分镜。
+- [Qwen Image Gen](https://github.com/ZSeven-W/craft-skills/tree/main/skills/qwen-image-gen) — 面向已部署 Qwen-Image 的提示词优化 Skill，覆盖文生图、局部改图、换姿势换场景和画幅选择，并按实际出图结果迭代修正提示词。
+- [Awesome Persona Distill Skills](https://github.com/xixu-me/awesome-persona-distill-skills) — 人格蒸馏类 Agent Skills 的收录列表，按自我蒸馏、职场与学术、亲密关系、公众人物方法论、精神性主题分区，每条附一句话说明。
+- [Rico Skills](https://github.com/ricocc/rico-skills) — 内容与设计向的 Claude Code skill 组合：把任意网站拆成完整设计系统文档（DESIGN.md / tokens / CSS / Tailwind 主题）或在不同设计格式间互转，也能按 20 套预设主题一键改站点视觉。
+- [Matt Pocock Skills](https://github.com/mattpocock/skills) — 面向真实工程而非 vibe coding 的一套小颗粒可组合 skill，用 /grill-me 反复追问把需求问清楚，再用 /tdd、/code-review、/improve-codebase-architecture 管住反馈闭环和代码结构。
+- [Archify](https://github.com/tt-a1i/archify) — 把想法、方案或整个代码库画成可交互的独立 HTML 图（工作流、时序、数据流、ERD、时间线等），能点节点看上下游、追指定路径、切主题并导出 PNG/PDF，也能顺着仓库生成带源码定位的架构图。
+- [photo-abstract-editorial](https://github.com/ZzzLc0405/photo-abstract-editorial) — 把一张照片做成「原始摄影区域 + 抽象记忆面板 + 诗意英文标题」的竖版编辑作品，抽象形式与配色只从原片提炼，不是滤镜或风格迁移。
+- [heytea-style](https://github.com/Hchen1218/heytea-style) — 保留照片里一个真实物件当锚点，配粗黑笨拙的儿童简笔画小人和歪扭手写标题，做成喜茶海报质感的竖版海报，带字版与无字版是两套独立构图。
+- [gc-minimal-zine-poster](https://github.com/LiamGvchi/gc-minimal-zine-poster) — 把主题、句子、物件或情绪做成 3:5 做旧纸质的极简 zine 编辑海报，七成以上留白、只留一个视觉主体，同时给出成品图和可复用的提示词。
+- [ip-illustration-for-yourself](https://github.com/EverettFish/ip_illustration_for_yourself) — 先用几张参考图立一个「萌粒风」角色锚点，再从它长出文章配图、信息图、贴纸、文件夹图标、信纸、头像和表情包，一整套风格统一的个人 IP 资产。
+- [photo-revival](https://github.com/dacnay816y62-hub/photo-revival) — 把随手拍、废片和日常物件重画成 3:4 白纸手绘插画，主体只占一成多、留白八成以上，配一句手写小字，输出的是「一页诗」而不是照片滤镜。
+- [tait-crt-interface-skill](https://github.com/TaiT-tt/tait-crt-interface-skill) — 把照片或文字描述做成早期 CRT 计算机界面质感的像素复古插画，多套色卡、悬浮视窗、扫描线和桶形畸变，另带三种风格模板。
 
-### SpringCloud
 
-- [Spring-Cloud-Platform/Cloud-Admin](https://github.com/wxiaoqi/Spring-Cloud-Platform) ![Packagist Stars](https://img.shields.io/github/stars/wxiaoqi/Spring-Cloud-Platform?style=flat-square)
 
-  Cloud-Platform是国内首个基于Spring Cloud微服务化开发平台，具有统一授权、认证后台管理系统，其中包含具备用户管理、资源权限管理、网关API 管理等多个模块，支持多业务系统并行开发，可以作为后端服务的开发脚手架。
+其他资源：
 
-- [jeecg-boot](https://github.com/zhangdaiscott/jeecg-boot) ![Packagist Stars](https://img.shields.io/github/stars/zhangdaiscott/jeecg-boot?style=flat-square)
+- https://colaskill.com/zh/
 
-  Jeecg-Boot 是一款基于BPM的低代码开发平台！采用前后端分离架构： SpringBoot 2.x，Ant Design&Vue，Mybatis-plus，Shiro，JWT。
 
-- [pig](https://gitee.com/log4j/pig) ![P](https://img.shields.io/badge/-推荐-44cef6?style=flat-square) ![stars](https://gitee.com/log4j/pig/badge/star.svg?theme=dark)
 
-  基于 Spring Cloud Hoxton 、Spring Boot 2.3、 OAuth2 的RBAC权限管理系统
+## 前端
 
-- [matecloud](https://github.com/matevip/matecloud) ![Packagist Stars](https://img.shields.io/github/stars/matevip/matecloud?style=flat-square)
-  基于 Spring Cloud Alibaba 的微服务架构。旨在为大家提供技术框架的基础能力的封装，减少开发工作，让您只关注业务。
+除非是你自己去完整的设计 UI，否则只靠简单描述的话，大概率会生成一堆风格类似的 AI 味很浓的页面。
 
-- open-capacity-platform
+看了下目前比较火的有 [Taste Skill](https://www.tasteskill.dev/) 这一类减少 AI 设计感的项目。
 
-### 全家桶
+前端设计方向，A\ 做的还算是不错的，可以参考下它们的 [SKILL](https://github.com/anthropics/skills/tree/main/skills/frontend-design) 是怎么写的。
 
-- [generator-jhipster](https://github.com/jhipster/generator-jhipster) ![Packagist Stars](https://img.shields.io/github/stars/jhipster/generator-jhipster?style=flat-square)
+### 调试
 
-  JHipster is a development platform to quickly generate, develop, & deploy modern web applications & microservice architectures.
+除了数据，另一个目前比较大的问题就是调试，不像后端，前端的调试有很多是样式的问题，并且非常依赖浏览器环境，用自然语言描述的话也很难精确。
 
-  JHipster 是一个生成、开发和部署 Spring Boot + Angular / React / Vue Web 应用与 Spring 微服务的开发平台.
+[Agentation](https://agentation.com/) 是一款与**Agent 无关**的可视化反馈工具。点击页面上的元素，添加注释，并复制结构化的输出，帮助 AI 编码代理找到您所指的确切代码。
 
-### 其他
 
-- [zheng](https://github.com/shuzheng/zheng) ![Packagist Stars](https://img.shields.io/github/stars/shuzheng/zheng?style=flat-square)
 
-  基于Spring+SpringMVC+Mybatis分布式敏捷开发系统架构，提供整套公共微服务服务模块：内容管理、支付中心、用户管理（包括第三方）、微信平台、存储系统、配置中心、日志分析、任务和通知等，支持服务治理、监控和追踪，努力为中小型企业打造全方位J2EE企业级开发解决方案。
+简单说把它引入你的前端项目，给你注入一个调试工具，通过点击选择来精确表达对页面的那个元素有什么要求，之后会生成一份 Agent 看得懂的描述只需要你原样发给 Codex 这类工具就行。
 
-- [jfinal](https://github.com/jfinal/jfinal) ![Packagist Stars](https://img.shields.io/github/stars/jfinal/jfinal?style=flat-square)
 
-  JFinal 是基于 Java 语言的极速 WEB + ORM 框架，其核心设计目标是开发迅速、代码量少、学习简单、功能强大、轻量级、易扩展、Restful。
 
-## WebUI
+另一种可以通过 Chrome DevTools 的 MCP 协议来让 Agent 了解环境信息，并且 Chrome 也提供了 [chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) 服务来更好的让 Agent 操控浏览器（一般 Slim 模式够用）。
 
-划分为纯基本样式库与二次开发的管理后台通用库，对于前台一般是需要自主设计配合 UI 基本库实现开发；后台讲究效率基本功能一致，可使用模版快速实现功能。
 
-### 基础样式库
-
-- [element](https://github.com/ElemeFE/element) ![Packagist Stars](https://img.shields.io/github/stars/ElemeFE/element?style=flat-square)
-
-  A Vue.js 2.0 UI Toolkit for Web.
-
-  Vue 3.0 对应版本：[element-plus](https://github.com/element-plus/element-plus)
-
-- [ant-design](https://github.com/ant-design/ant-design) ![Packagist Stars](https://img.shields.io/github/stars/ant-design/ant-design?style=flat-square)
-
-  An enterprise-class UI design language and React UI library.
-
-- [ant-design-vue](https://github.com/vueComponent/ant-design-vue)
-
-  ant-design vue 移植版本，支持 Vue3
-
-- [layui](https://github.com/sentsin/layui) ![Packagist Stars](https://img.shields.io/github/stars/sentsin/layui?style=flat-square)
-
-  layui 是一款采用自身模块规范编写的前端 UI 框架，遵循原生 HTML/CSS/JS 的书写与组织形式，门槛极低，拿来即用.
-
-- [D2Admin](https://github.com/d2-projects/d2-admin) ![Packagist Stars](https://img.shields.io/github/stars/d2-projects/d2-admin?style=flat-square)
-
-  是一个完全 **开源免费** 的企业中后台产品前端集成方案，使用最新的前端技术栈，小于 60kb 的本地首屏 js 加载，已经做好大部分项目前期准备工作，并且带有大量示例代码，助力管理系统敏捷开发。
-
-- [vue-manage-system](https://github.com/lin-xin/vue-manage-system) ![Packagist Stars](https://img.shields.io/github/stars/lin-xin/vue-manage-system?style=flat-square)
-
-  基于 Vue + Element UI 的后台管理系统解决方案。
-
-- [vue-admin-beautiful](https://github.com/chuzhixin/vue-admin-beautiful) ![Packagist Stars](https://img.shields.io/github/stars/chuzhixin/vue-admin-beautiful?style=flat-square)
-
-  全网首家实现 element-ui 横向纵向布局无缝切换，多标签页关闭左侧关闭右侧关闭其他（布局切换效果仿 ant-design-pro，tagsBar 仿谷歌浏览器右键菜单）。
-
-- [vuestic-admin](https://github.com/epicmaxco/vuestic-admin) ![Packagist Stars](https://img.shields.io/github/stars/epicmaxco/vuestic-admin?style=flat-square)
-
-  免费与美妙的 Vue.js 管理模板包括 38 以上个定制用户界面组件。
-
-- [vuetify](https://github.com/vuetifyjs/vuetify) ![Packagist Stars](https://img.shields.io/github/stars/vuetifyjs/vuetify?style=flat-square)
-
-  Material Component Framework for Vue
-
-  材料风格的 UI 库
-
-- [mint-ui](https://github.com/ElemeFE/mint-ui) ![Packagist Stars](https://img.shields.io/github/stars/ElemeFE/mint-ui?style=flat-square)
-
-  Mobile UI elements for Vue.js
-  
-- [vant](https://github.com/youzan/vant) ![Packagist Stars](https://img.shields.io/github/stars/youzan/vant?style=flat-square)
-
-  Mobile UI Components built on Vue
-
-- [vux](https://github.com/airyland/vux) ![Packagist Stars](https://img.shields.io/github/stars/airyland/vux?style=flat-square)
-
-  一个凑合的 Vue.js 移动端 UI 组件库.
-
-- [swarmpit](https://github.com/swarmpit/swarmpit) ![Packagist Stars](https://img.shields.io/github/stars/swarmpit/swarmpit?style=flat-square)
-
-  Lightweight mobile-friendly Docker Swarm management UI
-
-- 完整列表
-
-### Web管理后台通用
-
-- [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin) ![Packagist Stars](https://img.shields.io/github/stars/PanJiaChen/vue-element-admin?style=flat-square)
-
-  vue-element-admin 是一个后台前端解决方案，它基于 vue2 和 element-ui实现。
-
-- [vue-manage-system](https://github.com/lin-xin/vue-manage-system) ![Packagist Stars](https://img.shields.io/github/stars/lin-xin/vue-manage-system?style=flat-square)
-
-  基于 Vue3 + Element Plus 的后台管理系统解决方案
-
-
-## Web开发环境与工具
-
-- [parcel](https://github.com/parcel-bundler/parcel) ![Packagist Stars](https://img.shields.io/github/stars/parcel-bundler/parcel?style=flat-square)
-
-  Blazing fast, zero configuration web application bundler
-
-  打包工具
-
-- [vite](https://github.com/vitejs/vite) ![P](https://img.shields.io/badge/-推荐-44cef6?style=flat-square) ![Packagist Stars](https://img.shields.io/github/stars/vitejs/vite?style=flat-square)
-
-  Native-ESM powered web dev build tool. It's fast.
-
-  快速的构建工具
-  
-- [umi](https://github.com/umijs/umi) ![Packagist Stars](https://img.shields.io/github/stars/umijs/umi?style=flat-square)
-
-  Pluggable enterprise-level react application framework.
-  
-  可插拔的企业级 react 应用框架
-  
-- [imgsquash](https://github.com/eashish93/imgsquash) ![Packagist Stars](https://img.shields.io/github/stars/eashish93/imgsquash?style=flat-square)
-
-  Image compression full stack website code. Contains both api service and frontend written in node, react and next.js framework.
-
-  图片压缩，可轻易部署使用
-
-- [sheetjs](https://github.com/SheetJS/sheetjs) ![Packagist Stars](https://img.shields.io/github/stars/SheetJS/sheetjs?style=flat-square)
-
-  Parser and writer for various spreadsheet formats.
-
-  电子表格解析
-
-- [yapi](https://github.com/YMFE/yapi) ![Packagist Stars](https://img.shields.io/github/stars/YMFE/yapi?style=flat-square)
-
-  YApi 是高效、易用、功能强大的 api 管理平台，旨在为开发、产品、测试人员提供更优雅的接口管理服务。
-
-- [pm2](https://github.com/Unitech/pm2) ![Packagist Stars](https://img.shields.io/github/stars/Unitech/pm2?style=flat-square)
-
-  PM2 is a production process manager for Node.js applications with a built-in load balancer. 
-
-  Node 的进程管理器。
-
-## 小程序与App
-
-- [mpvue](https://github.com/Meituan-Dianping/mpvue) ![Packagist Stars](https://img.shields.io/github/stars/Meituan-Dianping/mpvue?style=flat-square)
-
-  mpvue 是一个使用 Vue.js 开发小程序的前端框架，目前支持 微信小程序、百度智能小程序，头条小程序 和 支付宝小程序。
-
-- [taro](https://github.com/NervJS/taro) ![Packagist Stars](https://img.shields.io/github/stars/NervJS/taro?style=flat-square)
-
-  开放式跨端跨框架解决方案，支持使用 React/Vue/Nerv 等框架来开发微信/京东/百度/支付宝/字节跳动/ QQ 小程序/H5 等应用。
-
-- [uni-app](https://github.com/dcloudio/uni-app) ![Packagist Stars](https://img.shields.io/github/stars/dcloudio/uni-app?style=flat-square)
-
-  uni-app 是一个使用 Vue.js 开发小程序、H5、App的统一前端框架。由 DCloud 维护。
-
-- [incubator-weex](https://github.com/apache/incubator-weex) ![Packagist Stars](https://img.shields.io/github/stars/apache/incubator-weex?style=flat-square)
-
-  Weex 是一个可以使用现代化的 Web 技术开发高性能原生应用的框架。
-
-- [mui](https://github.com/dcloudio/mui) ![Packagist Stars](https://img.shields.io/github/stars/dcloudio/mui?style=flat-square)
-
-  最接近原生APP体验的高性能框架.
-
-- [rax](https://github.com/alibaba/rax) ![Packagist Stars](https://img.shields.io/github/stars/alibaba/rax?style=flat-square)
-
-  Rax is a progressive React framework for building universal application.
-
-- [flutter](https://github.com/flutter/flutter) ![Packagist Stars](https://img.shields.io/github/stars/flutter/flutter?style=flat-square)
-
-  Flutter is Google's SDK for crafting beautiful, fast user experiences for mobile, web and desktop from a single codebase.
 
 ## License
 
