@@ -39,6 +39,12 @@ Few-shot 示例：
 
 
 
+## 视频
+
+
+
+- [舞蹈动链 H3 库(可重复学习的动作链标准件)](https://github.com/LoveRain1997/h3-prompt-journal/blob/main/case-studies/2026-10-dance-motion-chain-library/dance-motion-chain-h3.md) 
+
 
 
 ## 绘图

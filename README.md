@@ -69,6 +69,7 @@ SKill 是通用的，但是不同的工具配置目录不一致，如果同时�
 - [ip-illustration-for-yourself](https://github.com/EverettFish/ip_illustration_for_yourself) — 先用几张参考图立一个「萌粒风」角色锚点，再从它长出文章配图、信息图、贴纸、文件夹图标、信纸、头像和表情包，一整套风格统一的个人 IP 资产。
 - [photo-revival](https://github.com/dacnay816y62-hub/photo-revival) — 把随手拍、废片和日常物件重画成 3:4 白纸手绘插画，主体只占一成多、留白八成以上，配一句手写小字，输出的是「一页诗」而不是照片滤镜。
 - [tait-crt-interface-skill](https://github.com/TaiT-tt/tait-crt-interface-skill) — 把照片或文字描述做成早期 CRT 计算机界面质感的像素复古插画，多套色卡、悬浮视窗、扫描线和桶形畸变，另带三种风格模板。
+- [ffmpeg-skill](https://github.com/kajisho5/ffmpeg-skill)
 
 
 
